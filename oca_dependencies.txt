@@ -1,3 +1,7 @@
-# See https://github.com/OCA/odoo-community.org/blob/master/website/Contribution/CONTRIBUTING.rst#oca_dependencies-txt
+# list the OCA project dependencies, one per line
+# add a github url if you need a forked version
 web
 project
+reporting-engine
+crm
+hr

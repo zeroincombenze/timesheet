@@ -7,4 +7,3 @@
 * `Onestein <https://www.onestein.eu>`_:
 
   * Andrea Stirpe
-* Sunanda Chhatbar <sunanda.chhatbar@initos.com>

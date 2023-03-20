@@ -1,13 +1,13 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* hr_timesheet_time_type
+#	* hr_timesheet_time_type
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 14.0\n"
+"Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2022-12-15 18:44+0000\n"
-"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"PO-Revision-Date: 2023-01-26 15:45+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,7 @@ msgstr ""
 #. module: hr_timesheet_time_type
 #: model:ir.model,name:hr_timesheet_time_type.model_account_analytic_line
 msgid "Analytic Line"
-msgstr "Riga analitica"
+msgstr "Riga anlaitica"
 
 #. module: hr_timesheet_time_type
 #: model:ir.model.fields,field_description:hr_timesheet_time_type.field_project_time_type__code
@@ -39,7 +39,7 @@ msgstr "Creato il"
 #. module: hr_timesheet_time_type
 #: model:ir.model,name:hr_timesheet_time_type.model_project_time_type
 msgid "Define Time Types"
-msgstr "Definisci Tipi Orario"
+msgstr "Definizione tipi orario"
 
 #. module: hr_timesheet_time_type
 #: model:ir.model.fields,field_description:hr_timesheet_time_type.field_project_time_type__description
@@ -52,19 +52,16 @@ msgid "Description..."
 msgstr "Descrizione..."
 
 #. module: hr_timesheet_time_type
-#: model:ir.model.fields,field_description:hr_timesheet_time_type.field_account_analytic_line__display_name
 #: model:ir.model.fields,field_description:hr_timesheet_time_type.field_project_time_type__display_name
 msgid "Display Name"
-msgstr "Nome Visualizzato"
+msgstr "Nome visualizzato"
 
 #. module: hr_timesheet_time_type
-#: model:ir.model.fields,field_description:hr_timesheet_time_type.field_account_analytic_line__id
 #: model:ir.model.fields,field_description:hr_timesheet_time_type.field_project_time_type__id
 msgid "ID"
 msgstr "ID"
 
 #. module: hr_timesheet_time_type
-#: model:ir.model.fields,field_description:hr_timesheet_time_type.field_account_analytic_line____last_update
 #: model:ir.model.fields,field_description:hr_timesheet_time_type.field_project_time_type____last_update
 msgid "Last Modified on"
 msgstr "Ultima modifica il"
@@ -87,7 +84,7 @@ msgstr "Nome"
 #. module: hr_timesheet_time_type
 #: model_terms:ir.ui.view,arch_db:hr_timesheet_time_type.view_project_time_type_form
 msgid "Task Activity"
-msgstr "Attività Lavoro"
+msgstr "Attività lavoro"
 
 #. module: hr_timesheet_time_type
 #: model:ir.actions.act_window,name:hr_timesheet_time_type.open_project_time_type_tree
@@ -97,10 +94,10 @@ msgstr "Attività Lavoro"
 #: model_terms:ir.ui.view,arch_db:hr_timesheet_time_type.view_project_time_type_form
 #: model_terms:ir.ui.view,arch_db:hr_timesheet_time_type.view_project_time_type_tree
 msgid "Time Type"
-msgstr "Tipo Orario"
+msgstr "Tipo orario"
 
 #. module: hr_timesheet_time_type
 #: model:ir.model.fields,field_description:hr_timesheet_time_type.field_account_analytic_line__time_type_name
 #: model:ir.model.fields,field_description:hr_timesheet_time_type.field_hr_timesheet_switch__time_type_name
 msgid "Time Type Name"
-msgstr "Nome Tipo Orario"
+msgstr "nome tipo orario"

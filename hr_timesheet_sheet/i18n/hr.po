@@ -29,7 +29,7 @@ msgstr ""
 #. module: hr_timesheet_sheet
 #: model_terms:ir.ui.view,arch_db:hr_timesheet_sheet.res_config_settings_view_form
 msgid ""
-"<span class=\"fa fa-lg fa-building\" title=\"Values set here are company-"
+"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
 "specific.\" aria-label=\"Values set here are company-specific.\" groups="
 "\"base.group_multi_company\" role=\"img\"/>"
 msgstr ""
@@ -67,18 +67,8 @@ msgid "Activities"
 msgstr "Aktivnosti kontrolne kartice"
 
 #. module: hr_timesheet_sheet
-#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet__activity_exception_decoration
-msgid "Activity Exception Decoration"
-msgstr ""
-
-#. module: hr_timesheet_sheet
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet__activity_state
 msgid "Activity State"
-msgstr ""
-
-#. module: hr_timesheet_sheet
-#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet__activity_type_icon
-msgid "Activity Type Icon"
 msgstr ""
 
 #. module: hr_timesheet_sheet
@@ -112,7 +102,7 @@ msgid "Approve"
 msgstr "Odobri"
 
 #. module: hr_timesheet_sheet
-#: model:ir.model.fields.selection,name:hr_timesheet_sheet.selection__hr_timesheet_sheet__state__done
+#: selection:hr_timesheet.sheet,state:0
 #: model:mail.message.subtype,description:hr_timesheet_sheet.mt_timesheet_approved
 #: model:mail.message.subtype,name:hr_timesheet_sheet.mt_timesheet_approved
 msgid "Approved"
@@ -124,17 +114,35 @@ msgid "Attachment Count"
 msgstr ""
 
 #. module: hr_timesheet_sheet
-#: model:ir.model.fields.selection,name:hr_timesheet_sheet.selection__res_company__timesheet_sheet_review_policy__hr_manager
+#: selection:res.company,timesheet_sheet_review_policy:0
+#, fuzzy
+msgid "By Department Manager"
+msgstr "Odjel ljudskih resursa"
+
+#. module: hr_timesheet_sheet
+#: selection:res.company,timesheet_sheet_review_policy:0
+#, fuzzy
+msgid "By Direct Manager"
+msgstr "Odjel ljudskih resursa"
+
+#. module: hr_timesheet_sheet
+#: selection:res.company,timesheet_sheet_review_policy:0
 msgid "By HR Managers"
 msgstr ""
 
 #. module: hr_timesheet_sheet
-#: model:ir.model.fields.selection,name:hr_timesheet_sheet.selection__res_company__timesheet_sheet_review_policy__hr
+#: selection:res.company,timesheet_sheet_review_policy:0
 msgid "By HR Officers"
 msgstr ""
 
 #. module: hr_timesheet_sheet
-#: model:ir.model.fields.selection,name:hr_timesheet_sheet.selection__res_company__timesheet_sheet_review_policy__timesheet_manager
+#: selection:res.company,timesheet_sheet_review_policy:0
+#, fuzzy
+msgid "By Project Manager"
+msgstr "Odjel ljudskih resursa"
+
+#. module: hr_timesheet_sheet
+#: selection:res.company,timesheet_sheet_review_policy:0
 msgid "By Timesheets Managers"
 msgstr ""
 
@@ -144,19 +152,19 @@ msgid "Can Review"
 msgstr ""
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:0
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:583
 #, python-format
 msgid "Cannot approve a non-submitted sheet."
 msgstr ""
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:0
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:593
 #, python-format
 msgid "Cannot reject a non-submitted sheet."
 msgstr ""
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:0
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:567
 #, python-format
 msgid "Cannot revert to draft a non-approved sheet."
 msgstr ""
@@ -246,7 +254,7 @@ msgid "Date To"
 msgstr "Datum do"
 
 #. module: hr_timesheet_sheet
-#: model:ir.model.fields.selection,name:hr_timesheet_sheet.selection__res_company__sheet_range__daily
+#: selection:res.company,sheet_range:0
 msgid "Day"
 msgstr ""
 
@@ -256,7 +264,6 @@ msgid "Delete"
 msgstr ""
 
 #. module: hr_timesheet_sheet
-#: model:ir.model,name:hr_timesheet_sheet.model_hr_department
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet__department_id
 #: model_terms:ir.ui.view,arch_db:hr_timesheet_sheet.view_hr_timesheet_sheet_filter
 msgid "Department"
@@ -268,16 +275,10 @@ msgid "Details"
 msgstr "Detalji"
 
 #. module: hr_timesheet_sheet
-#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_account_analytic_account__display_name
-#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_account_analytic_line__display_name
-#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_department__display_name
-#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_employee__display_name
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet__display_name
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_line__display_name
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_line_abstract__display_name
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_new_analytic_line__display_name
-#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_res_company__display_name
-#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_res_config_settings__display_name
 msgid "Display Name"
 msgstr "Naziv za prikaz"
 
@@ -352,12 +353,7 @@ msgid "Followers (Partners)"
 msgstr ""
 
 #. module: hr_timesheet_sheet
-#: model:ir.model.fields,help:hr_timesheet_sheet.field_hr_timesheet_sheet__activity_type_icon
-msgid "Font awesome icon e.g. fa-tasks"
-msgstr ""
-
-#. module: hr_timesheet_sheet
-#: model:ir.model.fields.selection,name:hr_timesheet_sheet.selection__res_company__timesheet_week_start__4
+#: selection:res.company,timesheet_week_start:0
 msgid "Friday"
 msgstr ""
 
@@ -365,6 +361,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:hr_timesheet_sheet.view_hr_timesheet_sheet_filter
 msgid "Group By"
 msgstr "Grupiraj po"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model,name:hr_timesheet_sheet.model_hr_department
+#, fuzzy
+msgid "HR Department"
+msgstr "Odjel ljudskih resursa"
 
 #. module: hr_timesheet_sheet
 #: model_terms:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
@@ -379,38 +381,25 @@ msgid "How Timesheet Sheets review is performed."
 msgstr "Evidencije rada za odobriti."
 
 #. module: hr_timesheet_sheet
-#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_account_analytic_account__id
-#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_account_analytic_line__id
-#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_department__id
-#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_employee__id
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet__id
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_line__id
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_line_abstract__id
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_new_analytic_line__id
-#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_res_company__id
-#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_res_config_settings__id
 msgid "ID"
 msgstr "ID"
 
 #. module: hr_timesheet_sheet
-#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet__activity_exception_icon
-msgid "Icon"
-msgstr ""
-
-#. module: hr_timesheet_sheet
-#: model:ir.model.fields,help:hr_timesheet_sheet.field_hr_timesheet_sheet__activity_exception_icon
-msgid "Icon to indicate an exception activity."
+#: model:ir.model.fields,help:hr_timesheet_sheet.field_hr_timesheet_sheet__message_unread
+msgid "If checked new messages require your attention."
 msgstr ""
 
 #. module: hr_timesheet_sheet
 #: model:ir.model.fields,help:hr_timesheet_sheet.field_hr_timesheet_sheet__message_needaction
-#: model:ir.model.fields,help:hr_timesheet_sheet.field_hr_timesheet_sheet__message_unread
 msgid "If checked, new messages require your attention."
 msgstr ""
 
 #. module: hr_timesheet_sheet
 #: model:ir.model.fields,help:hr_timesheet_sheet.field_hr_timesheet_sheet__message_has_error
-#: model:ir.model.fields,help:hr_timesheet_sheet.field_hr_timesheet_sheet__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr ""
 
@@ -434,17 +423,17 @@ msgid "In Draft"
 msgstr "U nacrtu"
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:0
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:498
 #, fuzzy, python-format
 msgid ""
 "In order to create a sheet for this employee, you must link him/her to an "
 "user: %s"
 msgstr ""
 "Kako bi se kreirali evidenciju rada za ovog djelatnika, morate njega/nju "
-"vezati na korisnika."
+"vezati na korisnika: %s"
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:0
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:607
 #, fuzzy, python-format
 msgid ""
 "In order to review a timesheet sheet, your user needs to be linked to an "
@@ -459,16 +448,10 @@ msgid "Is Follower"
 msgstr ""
 
 #. module: hr_timesheet_sheet
-#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_account_analytic_account____last_update
-#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_account_analytic_line____last_update
-#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_department____last_update
-#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_employee____last_update
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet____last_update
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_line____last_update
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_line_abstract____last_update
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_new_analytic_line____last_update
-#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_res_company____last_update
-#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_res_config_settings____last_update
 msgid "Last Modified on"
 msgstr "Zadnja promjena"
 
@@ -503,19 +486,14 @@ msgid "Messages"
 msgstr "Nepročitane poruke"
 
 #. module: hr_timesheet_sheet
-#: model:ir.model.fields.selection,name:hr_timesheet_sheet.selection__res_company__timesheet_week_start__0
+#: selection:res.company,timesheet_week_start:0
 msgid "Monday"
 msgstr ""
 
 #. module: hr_timesheet_sheet
-#: model:ir.model.fields.selection,name:hr_timesheet_sheet.selection__res_company__sheet_range__monthly
+#: selection:res.company,sheet_range:0
 msgid "Month"
 msgstr "Mjesec"
-
-#. module: hr_timesheet_sheet
-#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet__my_activity_date_deadline
-msgid "My Activity Deadline"
-msgstr ""
 
 #. module: hr_timesheet_sheet
 #: model:ir.actions.act_window,name:hr_timesheet_sheet.act_hr_timesheet_sheet_my_timesheets
@@ -544,7 +522,7 @@ msgid "Name"
 msgstr "Od datuma"
 
 #. module: hr_timesheet_sheet
-#: model:ir.model.fields.selection,name:hr_timesheet_sheet.selection__hr_timesheet_sheet__state__new
+#: selection:hr_timesheet.sheet,state:0
 msgid "New"
 msgstr "Novi"
 
@@ -587,7 +565,7 @@ msgstr ""
 
 #. module: hr_timesheet_sheet
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet__message_has_error_counter
-msgid "Number of errors"
+msgid "Number of error"
 msgstr ""
 
 #. module: hr_timesheet_sheet
@@ -607,19 +585,34 @@ msgid "Number of unread messages"
 msgstr "Nepročitane poruke"
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:0
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:617
 #, python-format
 msgid "Only a HR Officer or Manager can review the sheet."
 msgstr ""
 
 #. module: hr_timesheet_sheet
-#: model:ir.model.fields.selection,name:hr_timesheet_sheet.selection__hr_timesheet_sheet__state__draft
+#: selection:hr_timesheet.sheet,state:0
 msgid "Open"
 msgstr "Otvori"
 
 #. module: hr_timesheet_sheet
+#: selection:hr_timesheet.sheet,activity_state:0
+msgid "Overdue"
+msgstr ""
+
+#. module: hr_timesheet_sheet
+#: selection:res.company,sheet_range:0
+msgid "Payroll Period"
+msgstr ""
+
+#. module: hr_timesheet_sheet
 #: model_terms:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_tree
 msgid "Period"
+msgstr ""
+
+#. module: hr_timesheet_sheet
+#: selection:hr_timesheet.sheet,activity_state:0
+msgid "Planned"
 msgstr ""
 
 #. module: hr_timesheet_sheet
@@ -674,17 +667,12 @@ msgid "Reviewer"
 msgstr ""
 
 #. module: hr_timesheet_sheet
-#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr ""
-
-#. module: hr_timesheet_sheet
-#: model:ir.model.fields.selection,name:hr_timesheet_sheet.selection__res_company__timesheet_week_start__5
+#: selection:res.company,timesheet_week_start:0
 msgid "Saturday"
 msgstr ""
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:0
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:930
 #, fuzzy, python-format
 msgid "Save the Timesheet Sheet first."
 msgstr "Stavke evidencije rada"
@@ -774,7 +762,7 @@ msgid "Summary"
 msgstr "Sažetak"
 
 #. module: hr_timesheet_sheet
-#: model:ir.model.fields.selection,name:hr_timesheet_sheet.selection__res_company__timesheet_week_start__6
+#: selection:res.company,timesheet_week_start:0
 msgid "Sunday"
 msgstr ""
 
@@ -792,27 +780,27 @@ msgid "Temporary Timesheets"
 msgstr "Traži evidenciju rada"
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:0
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:321
 #, python-format
 msgid ""
 "The Company in the Timesheet Sheet and in the Department must be the same."
 msgstr ""
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:0
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:311
 #, python-format
 msgid ""
 "The Company in the Timesheet Sheet and in the Employee must be the same."
 msgstr ""
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:0
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:331
 #, python-format
 msgid "The Company in the Timesheet Sheet and in the Project must be the same."
 msgstr ""
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:0
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:341
 #, python-format
 msgid "The Company in the Timesheet Sheet and in the Task must be the same."
 msgstr ""
@@ -824,13 +812,13 @@ msgid "The range of your Timesheet Sheet."
 msgstr ""
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:0
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:263
 #, python-format
 msgid "The start date cannot be later than the end date."
 msgstr ""
 
 #. module: hr_timesheet_sheet
-#: model:ir.model.fields.selection,name:hr_timesheet_sheet.selection__res_company__timesheet_week_start__3
+#: selection:res.company,timesheet_week_start:0
 msgid "Thursday"
 msgstr ""
 
@@ -984,18 +972,18 @@ msgid "To Review"
 msgstr ""
 
 #. module: hr_timesheet_sheet
+#: selection:hr_timesheet.sheet,activity_state:0
+msgid "Today"
+msgstr ""
+
+#. module: hr_timesheet_sheet
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet__total_time
 msgid "Total Time"
 msgstr "Ukupno vrijeme"
 
 #. module: hr_timesheet_sheet
-#: model:ir.model.fields.selection,name:hr_timesheet_sheet.selection__res_company__timesheet_week_start__1
+#: selection:res.company,timesheet_week_start:0
 msgid "Tuesday"
-msgstr ""
-
-#. module: hr_timesheet_sheet
-#: model:ir.model.fields,help:hr_timesheet_sheet.field_hr_timesheet_sheet__activity_exception_decoration
-msgid "Type of the exception activity on record."
 msgstr ""
 
 #. module: hr_timesheet_sheet
@@ -1016,7 +1004,7 @@ msgid "User"
 msgstr "Korisnik"
 
 #. module: hr_timesheet_sheet
-#: model:ir.model.fields.selection,name:hr_timesheet_sheet.selection__hr_timesheet_sheet__state__confirm
+#: selection:hr_timesheet.sheet,state:0
 #: model:mail.message.subtype,name:hr_timesheet_sheet.mt_timesheet_confirmed
 #, fuzzy
 msgid "Waiting Review"
@@ -1029,7 +1017,7 @@ msgid "Waiting review"
 msgstr "Čeka odobrenje"
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:0
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:929
 #, python-format
 msgid "Warning"
 msgstr ""
@@ -1046,17 +1034,17 @@ msgid "Website communication history"
 msgstr ""
 
 #. module: hr_timesheet_sheet
-#: model:ir.model.fields.selection,name:hr_timesheet_sheet.selection__res_company__timesheet_week_start__2
+#: selection:res.company,timesheet_week_start:0
 msgid "Wednesday"
 msgstr ""
 
 #. module: hr_timesheet_sheet
-#: model:ir.model.fields.selection,name:hr_timesheet_sheet.selection__res_company__sheet_range__weekly
+#: selection:res.company,sheet_range:0
 msgid "Week"
 msgstr "Tjedan"
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:0
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:206
 #, fuzzy, python-format
 msgid "Week %s"
 msgstr "Tjedan %s"
@@ -1072,61 +1060,58 @@ msgid "Week start day"
 msgstr ""
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:0
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:210
 #, python-format
 msgid "Weeks %s - %s"
 msgstr ""
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/models/account_analytic_account.py:0
-#: code:addons/hr_timesheet_sheet/models/hr_department.py:0
-#: code:addons/hr_timesheet_sheet/models/hr_employee.py:0
+#: code:addons/hr_timesheet_sheet/models/account_analytic_account.py:17
+#: code:addons/hr_timesheet_sheet/models/hr_department.py:39
+#: code:addons/hr_timesheet_sheet/models/hr_employee.py:41
 #, python-format
 msgid "You cannot change the company, as this %s (%s) is assigned to %s (%s)."
 msgstr ""
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/models/account_analytic_line.py:0
-#, fuzzy, python-format
+#: code:addons/hr_timesheet_sheet/models/account_analytic_line.py:59
+#, python-format
 msgid ""
 "You cannot create a timesheet of a different company than the one of the "
 "timesheet sheet:\n"
 " - %s of %s\n"
 " - %s of %s"
-msgstr "Ne možete modificirati polje u potvrđenoj kontrolnoj kartici."
+msgstr ""
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:0
-#, fuzzy, python-format
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:539
+#, python-format
 msgid ""
 "You cannot delete a timesheet sheet which is already submitted or confirmed: "
 "%s"
-msgstr "Ne možete obrisati evidenciju rada koja je već potvrđena."
+msgstr "Ne možete obrisati evidenciju rada koja je već potvrđena: %s"
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:0
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:510
 #, python-format
 msgid "You cannot duplicate a sheet."
 msgstr ""
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:0
-#, fuzzy, python-format
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:300
+#, python-format
 msgid ""
 "You cannot have 2 or more sheets that overlap!\n"
 "Please use the menu \"Timesheet Sheet\" to avoid this problem.\n"
 "Conflicting sheets:\n"
 " - %s"
 msgstr ""
-"Ne možete imati 2 evidencije rada koje se preklapaju! \n"
-"Molimo koristite izbornik 'Moja trenutna evidencija rada' kako bi izbjegli "
-"ovaj problem."
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/models/account_analytic_line.py:0
+#: code:addons/hr_timesheet_sheet/models/account_analytic_line.py:136
 #, fuzzy, python-format
 msgid "You cannot modify an entry in a confirmed timesheet sheet: %s"
-msgstr "Ne možete modificirati polje u potvrđenoj kontrolnoj kartici."
+msgstr "Ne možete modificirati polje u potvrđenoj kontrolnoj kartici: %s"
 
 #. module: hr_timesheet_sheet
 #: model_terms:ir.actions.act_window,help:hr_timesheet_sheet.act_hr_timesheet_line_to_submit_my
@@ -1150,10 +1135,6 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
 msgid "to"
 msgstr "za"
-
-#, fuzzy
-#~ msgid "HR Department"
-#~ msgstr "Odjel ljudskih resursa"
 
 #, fuzzy
 #~ msgid ""
@@ -1199,18 +1180,6 @@ msgstr "za"
 #~ "Morate snimiti evidencije rada svaki dan i potvrditi na kraju tjedna . "
 #~ "Nakon što je evidencija rada potvrđena,  trebala bi biti ovjerena od "
 #~ "strane menadžera."
-
-#, fuzzy
-#~ msgid "By Department Manager"
-#~ msgstr "Odjel ljudskih resursa"
-
-#, fuzzy
-#~ msgid "By Direct Manager"
-#~ msgstr "Odjel ljudskih resursa"
-
-#, fuzzy
-#~ msgid "By Project Manager"
-#~ msgstr "Odjel ljudskih resursa"
 
 #, fuzzy
 #~ msgid "Confirmed Timesheet Sheets"

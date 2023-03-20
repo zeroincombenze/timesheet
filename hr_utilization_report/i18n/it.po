@@ -1,10 +1,10 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* hr_utilization_report
+#	* hr_utilization_report
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 14.0\n"
+"Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2023-01-26 12:45+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
@@ -17,28 +17,33 @@ msgstr ""
 "X-Generator: Weblate 4.14.1\n"
 
 #. module: hr_utilization_report
-#: code:addons/hr_utilization_report/report/hr_utilization_report.py:0
+#: code:addons/hr_utilization_report/report/hr_utilization_report.py:314
 #, python-format
 msgid "\"%s\" report type is not supported"
 msgstr "Il tipo resoconto \"%s\" non è supportato"
 
 #. module: hr_utilization_report
-#: code:addons/hr_utilization_report/report/hr_utilization_report.py:0
+#: code:addons/hr_utilization_report/report/hr_utilization_report.py:328
 #, python-format
 msgid "\"%s\" report with \"%s\" type not found"
-msgstr "Resoconto \"%s\" con tipo \"%s\" non trovato"
+msgstr "Il resoconto \"%s\" con tipo \"%s\" non trovato"
 
 #. module: hr_utilization_report
-#: code:addons/hr_utilization_report/wizards/hr_utilization_report_wizard.py:0
+#: code:addons/hr_utilization_report/wizards/hr_utilization_report_wizard.py:125
 #, python-format
 msgid "\"Employee\" must be listed in Details Fields"
-msgstr "\"Dipendente\" deve essere elencato nei campi dettaglio"
+msgstr "\"Dipendente\" deve essere elencato nei campi dettagli"
 
 #. module: hr_utilization_report
-#: code:addons/hr_utilization_report/report/hr_utilization_report.py:0
+#: code:addons/hr_utilization_report/report/hr_utilization_report.py:224
 #, python-format
 msgid "%s not set"
 msgstr "%s non è impostato"
+
+#. module: hr_utilization_report
+#: model_terms:ir.ui.view,arch_db:hr_utilization_report.report_header
+msgid "<span> of </span>"
+msgstr "<span> di </span>"
 
 #. module: hr_utilization_report
 #: model_terms:ir.ui.view,arch_db:hr_utilization_report.report_header
@@ -51,19 +56,14 @@ msgid "<span>Utilization Report</span>"
 msgstr "<span>Resoconto utilizzo</span>"
 
 #. module: hr_utilization_report
-#: model_terms:ir.ui.view,arch_db:hr_utilization_report.report_header
-msgid "<span>of</span>"
-msgstr "<span>di</span>"
-
-#. module: hr_utilization_report
 #: model_terms:ir.ui.view,arch_db:hr_utilization_report.report_group_footer
 msgid "<strong>Subtotal</strong>"
-msgstr "<strong>Sobtotale</strong>"
+msgstr "<strong>Sub totale</strong>"
 
 #. module: hr_utilization_report
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report_entry__any_line_id
 msgid "Account Analytics Lines"
-msgstr "Righe conto analitico"
+msgstr "Conto righe analitiche"
 
 #. module: hr_utilization_report
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report_field__aggregation
@@ -73,17 +73,17 @@ msgid "Aggregation"
 msgstr "Aggregazione"
 
 #. module: hr_utilization_report
-#: code:addons/hr_utilization_report/report/hr_utilization_report.py:0
-#: code:addons/hr_utilization_report/report/hr_utilization_report.py:0
+#: code:addons/hr_utilization_report/report/hr_utilization_report.py:1011
+#: code:addons/hr_utilization_report/report/hr_utilization_report.py:1066
 #, python-format
 msgid "Amount, %s"
-msgstr "Valore, %s"
+msgstr "Ammontare, %s"
 
 #. module: hr_utilization_report
-#: code:addons/hr_utilization_report/wizards/hr_utilization_report_wizard.py:0
+#: code:addons/hr_utilization_report/wizards/hr_utilization_report_wizard.py:120
 #, python-format
 msgid "At least one field must be listed in Details Fields"
-msgstr "Almeno un campo deve essere inserito nei campi dettaglio"
+msgstr "Almeno un campo deve essere elencato nei campi dettagli"
 
 #. module: hr_utilization_report
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report_entry__block_id
@@ -111,8 +111,8 @@ msgid "Capacity,"
 msgstr "Capacità,"
 
 #. module: hr_utilization_report
-#: code:addons/hr_utilization_report/report/hr_utilization_report.py:0
-#: code:addons/hr_utilization_report/report/hr_utilization_report.py:0
+#: code:addons/hr_utilization_report/report/hr_utilization_report.py:1035
+#: code:addons/hr_utilization_report/report/hr_utilization_report.py:1072
 #, python-format
 msgid "Capacity, %s"
 msgstr "Capacità, %s"
@@ -120,7 +120,7 @@ msgstr "Capacità, %s"
 #. module: hr_utilization_report
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report_field_entry__cell_classes
 msgid "Cell classes"
-msgstr "Cella classi"
+msgstr "Classi cella"
 
 #. module: hr_utilization_report
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report__create_uid
@@ -149,26 +149,26 @@ msgid "Created on"
 msgstr "Creato il"
 
 #. module: hr_utilization_report
-#: code:addons/hr_utilization_report/report/hr_utilization_report.py:0
+#: code:addons/hr_utilization_report/report/hr_utilization_report.py:153
 #, python-format
 msgid "Date-To can not be earlier than Date-From"
-msgstr "La data fine non può essere antecedente alla data inizio"
+msgstr "La data finale non può essere antecedente alla data iniziale"
 
 #. module: hr_utilization_report
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report__department_ids
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report_wizard__department_ids
 msgid "Departments"
-msgstr "Reparti"
+msgstr "Dipartimenti"
 
 #. module: hr_utilization_report
 #: model_terms:ir.ui.view,arch_db:hr_utilization_report.report_header
 msgid "Departments:"
-msgstr "Reparti:"
+msgstr "Dipartimenti:"
 
 #. module: hr_utilization_report
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report_wizard__entry_field_ids
 msgid "Details Fields"
-msgstr "Campi dettaglio"
+msgstr "Campi dettagli"
 
 #. module: hr_utilization_report
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report__display_name
@@ -217,7 +217,7 @@ msgstr "Dipendenti:"
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report__date_to
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report_wizard__date_to
 msgid "End Date"
-msgstr "Data fine"
+msgstr "Data finale"
 
 #. module: hr_utilization_report
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report_block__entry_ids
@@ -227,7 +227,7 @@ msgstr "Voci"
 #. module: hr_utilization_report
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report__entry_field_ids
 msgid "Entry Fields"
-msgstr "Campi voce"
+msgstr "Campi voci"
 
 #. module: hr_utilization_report
 #: model_terms:ir.ui.view,arch_db:hr_utilization_report.hr_utilization_report_wizard_form
@@ -247,11 +247,11 @@ msgid "Field"
 msgstr "Campo"
 
 #. module: hr_utilization_report
-#: model:ir.model.constraint,message:hr_utilization_report.constraint_hr_utilization_report_field_entry_field_name_uniq
-#: model:ir.model.constraint,message:hr_utilization_report.constraint_hr_utilization_report_field_field_name_uniq
-#: model:ir.model.constraint,message:hr_utilization_report.constraint_hr_utilization_report_field_groupby_field_name_uniq
+#: sql_constraint:hr.utilization.report.field:0
+#: sql_constraint:hr.utilization.report.field.entry:0
+#: sql_constraint:hr.utilization.report.field.groupby:0
 msgid "Field can be reported only once!"
-msgstr "Il campo può essere riportato solo una volta!"
+msgstr "Il campo può essere inserito solo una volta!"
 
 #. module: hr_utilization_report
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report_field__field_name
@@ -289,19 +289,19 @@ msgstr "Gruppo"
 #. module: hr_utilization_report
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report__groupby_field_ids
 msgid "Group-By Fields"
-msgstr "Raggruppa per campo"
+msgstr "Raggruppa per campi"
 
 #. module: hr_utilization_report
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report_field__groupby
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report_field_entry__groupby
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report_field_groupby__groupby
 msgid "Group-by expression"
-msgstr "Raggruppa per espressione"
+msgstr "Ragguppa per espressione"
 
 #. module: hr_utilization_report
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report_wizard__grouping_field_ids
 msgid "Grouping Fields"
-msgstr "Raggruppamento campi"
+msgstr "Campi raggruppamento"
 
 #. module: hr_utilization_report
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report__group_ids
@@ -326,7 +326,7 @@ msgstr "Campo procedura guidata resoconto utilizzo RU"
 #. module: hr_utilization_report
 #: model:ir.model,name:hr_utilization_report.model_hr_utilization_report_wizard_field_details
 msgid "HR Utilization Report Wizard field (details)"
-msgstr "Campo procedura guidata resoconto utilizzo RU (dettagli)"
+msgstr "Campo procedura guidata resoconto utilizzo RU(dettagli)"
 
 #. module: hr_utilization_report
 #: model:ir.model,name:hr_utilization_report.model_hr_utilization_report_block
@@ -351,7 +351,7 @@ msgstr "Campo resoconto utilizzo RU (voce)"
 #. module: hr_utilization_report
 #: model:ir.model,name:hr_utilization_report.model_hr_utilization_report_field_groupby
 msgid "HR Utilization Report field (groupby)"
-msgstr "Campo resoconto utilizzo RU (raggruppa per)"
+msgstr "Campo resoconto utilizzo RU (raggruppato)"
 
 #. module: hr_utilization_report
 #: model:ir.model,name:hr_utilization_report.model_hr_utilization_report_group
@@ -367,7 +367,7 @@ msgstr "Procedura guidata resoconto utilizzo RU"
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report__has_multientry_blocks
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report_group__has_multientry_blocks
 msgid "Has Multi-Entry Blocks"
-msgstr "Ha blocchi multi-voce"
+msgstr "Ha blocchi multi voce"
 
 #. module: hr_utilization_report
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report__id
@@ -388,7 +388,7 @@ msgstr "ID"
 #. module: hr_utilization_report
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report_block__is_multientry
 msgid "Is Multi-Entry"
-msgstr "È multi-voce"
+msgstr "È multi voce"
 
 #. module: hr_utilization_report
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report____last_update
@@ -438,8 +438,8 @@ msgid "Name"
 msgstr "Nome"
 
 #. module: hr_utilization_report
-#: code:addons/hr_utilization_report/report/hr_utilization_report.py:0
-#: code:addons/hr_utilization_report/report/hr_utilization_report.py:0
+#: code:addons/hr_utilization_report/report/hr_utilization_report.py:1003
+#: code:addons/hr_utilization_report/report/hr_utilization_report.py:1027
 #, python-format
 msgid "No"
 msgstr "No"
@@ -459,7 +459,7 @@ msgid "Report"
 msgstr "Resoconto"
 
 #. module: hr_utilization_report
-#: code:addons/hr_utilization_report/report/hr_utilization_report.py:0
+#: code:addons/hr_utilization_report/report/hr_utilization_report.py:894
 #, python-format
 msgid "Report %s"
 msgstr "Resoconto %s"
@@ -487,12 +487,12 @@ msgstr "Sequenza"
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report__split_by_field_name
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report_wizard__split_by_field_name
 msgid "Split-By Field"
-msgstr "Diviso per campo"
+msgstr "Dividi per campo"
 
 #. module: hr_utilization_report
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report__split_by_field_title
 msgid "Split-By Field Title"
-msgstr "Diviso per titolo campo"
+msgstr "Dividi per titolo campo"
 
 #. module: hr_utilization_report
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report__date_from
@@ -504,7 +504,7 @@ msgstr "Data partenza"
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report__time_format
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report_wizard__time_format
 msgid "Time format"
-msgstr "Formato orario"
+msgstr "Formato ora"
 
 #. module: hr_utilization_report
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report_wizard_field__field_title
@@ -514,8 +514,8 @@ msgid "Title"
 msgstr "Titolo"
 
 #. module: hr_utilization_report
-#: code:addons/hr_utilization_report/report/hr_utilization_report.py:0
-#: code:addons/hr_utilization_report/report/hr_utilization_report.py:0
+#: code:addons/hr_utilization_report/report/hr_utilization_report.py:1656
+#: code:addons/hr_utilization_report/report/hr_utilization_report.py:1663
 #, python-format
 msgid "Total"
 msgstr "Totale"
@@ -566,24 +566,16 @@ msgid "Type"
 msgstr "Tipo"
 
 #. module: hr_utilization_report
+#: model:ir.actions.report,name:hr_utilization_report.action_report_qweb_html
 #: model:ir.actions.report,name:hr_utilization_report.action_report_qweb_pdf
+#: model:ir.actions.report,name:hr_utilization_report.action_report_xlsx
 msgid "Utilization Report"
 msgstr "Resoconto utilizzo"
-
-#. module: hr_utilization_report
-#: model:ir.actions.report,name:hr_utilization_report.action_report_qweb_html
-msgid "Utilization Report HTML"
-msgstr "Resoconto utilizzo HTML"
 
 #. module: hr_utilization_report
 #: model:ir.ui.menu,name:hr_utilization_report.menu_timesheet_report_wizard
 msgid "Utilization Report Wizard"
 msgstr "Procedura guidata resoconto utilizzo"
-
-#. module: hr_utilization_report
-#: model:ir.actions.report,name:hr_utilization_report.action_report_xlsx
-msgid "Utilization Report XLSX"
-msgstr "Resoconto utilizzo XLSX"
 
 #. module: hr_utilization_report
 #: model:ir.model.fields,field_description:hr_utilization_report.field_hr_utilization_report__utilization_format
@@ -597,7 +589,7 @@ msgid "Utilization,"
 msgstr "Utilizzo,"
 
 #. module: hr_utilization_report
-#: code:addons/hr_utilization_report/report/hr_utilization_report.py:0
+#: code:addons/hr_utilization_report/report/hr_utilization_report.py:1058
 #, python-format
 msgid "Utilization, %"
 msgstr "Utilizzo, %"
@@ -615,8 +607,8 @@ msgid "Wizard"
 msgstr "Procedura guidata"
 
 #. module: hr_utilization_report
-#: code:addons/hr_utilization_report/report/hr_utilization_report.py:0
-#: code:addons/hr_utilization_report/report/hr_utilization_report.py:0
+#: code:addons/hr_utilization_report/report/hr_utilization_report.py:995
+#: code:addons/hr_utilization_report/report/hr_utilization_report.py:1019
 #, python-format
 msgid "Yes"
 msgstr "Sì"
@@ -627,7 +619,7 @@ msgid "report.hr_utilization_report.report"
 msgstr "report.hr_utilization_report.report"
 
 #. module: hr_utilization_report
-#: code:addons/hr_utilization_report/report/hr_utilization_report.py:0
+#: code:addons/hr_utilization_report/report/hr_utilization_report.py:232
 #, python-format
 msgid "{l} » {r}"
 msgstr "{l} » {r}"

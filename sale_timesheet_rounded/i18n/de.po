@@ -33,10 +33,9 @@ msgstr ""
 
 #. module: sale_timesheet_rounded
 #: model_terms:ir.ui.view,arch_db:sale_timesheet_rounded.account_analytic_line_kanban_inherit
-#, fuzzy
 msgid ""
 "<br/>\n"
-"                <strong>Rounded: </strong>"
+"        <strong>Rounded: </strong>"
 msgstr ""
 "<br/>\n"
 "        <strong>Gerundet: </strong>"
@@ -47,19 +46,12 @@ msgid "Analytic Line"
 msgstr "Kostenstellen Buchung"
 
 #. module: sale_timesheet_rounded
-#: model:ir.model.fields.selection,name:sale_timesheet_rounded.selection__project_project__timesheet_rounding_method__half_up
+#: selection:project.project,timesheet_rounding_method:0
 msgid "Closest"
 msgstr "Am nächsten"
 
 #. module: sale_timesheet_rounded
-#: model:ir.model.fields,field_description:sale_timesheet_rounded.field_account_analytic_line__display_name
-#: model:ir.model.fields,field_description:sale_timesheet_rounded.field_project_project__display_name
-#: model:ir.model.fields,field_description:sale_timesheet_rounded.field_sale_order_line__display_name
-msgid "Display Name"
-msgstr ""
-
-#. module: sale_timesheet_rounded
-#: model:ir.model.fields.selection,name:sale_timesheet_rounded.selection__project_project__timesheet_rounding_method__down
+#: selection:project.project,timesheet_rounding_method:0
 msgid "Down"
 msgstr "Nach unten"
 
@@ -67,13 +59,6 @@ msgstr "Nach unten"
 #: model_terms:ir.ui.view,arch_db:sale_timesheet_rounded.hr_timesheet_view_task_form2_inherited_inherit
 msgid "Duration (rounded)"
 msgstr "Geleistete Stunden (gerundet)"
-
-#. module: sale_timesheet_rounded
-#: model:ir.model.fields,field_description:sale_timesheet_rounded.field_account_analytic_line__id
-#: model:ir.model.fields,field_description:sale_timesheet_rounded.field_project_project__id
-#: model:ir.model.fields,field_description:sale_timesheet_rounded.field_sale_order_line__id
-msgid "ID"
-msgstr ""
 
 #. module: sale_timesheet_rounded
 #: model:ir.model.fields,help:sale_timesheet_rounded.field_project_project__timesheet_rounding_method
@@ -85,14 +70,7 @@ msgstr ""
 "Einträge gerundet (d.h. bestehende Zeilen werden nicht automatisch gerundet)."
 
 #. module: sale_timesheet_rounded
-#: model:ir.model.fields,field_description:sale_timesheet_rounded.field_account_analytic_line____last_update
-#: model:ir.model.fields,field_description:sale_timesheet_rounded.field_project_project____last_update
-#: model:ir.model.fields,field_description:sale_timesheet_rounded.field_sale_order_line____last_update
-msgid "Last Modified on"
-msgstr ""
-
-#. module: sale_timesheet_rounded
-#: model:ir.model.fields.selection,name:sale_timesheet_rounded.selection__project_project__timesheet_rounding_method__no
+#: selection:project.project,timesheet_rounding_method:0
 msgid "No rounding"
 msgstr "Keine Rundung"
 
@@ -129,7 +107,7 @@ msgid "Timesheet rounding factor in percentage"
 msgstr "Stundenzettel Rundungsfaktor (in Prozent)"
 
 #. module: sale_timesheet_rounded
-#: model:ir.model.constraint,message:sale_timesheet_rounded.constraint_project_project_check_timesheet_rounding_factor
+#: sql_constraint:project.project:0
 msgid ""
 "Timesheet rounding factor should stay between 0 and 500, endpoints included."
 msgstr ""
@@ -152,6 +130,6 @@ msgid "Total quantity rounded"
 msgstr "Total gerundete Menge"
 
 #. module: sale_timesheet_rounded
-#: model:ir.model.fields.selection,name:sale_timesheet_rounded.selection__project_project__timesheet_rounding_method__up
+#: selection:project.project,timesheet_rounding_method:0
 msgid "Up"
 msgstr "Nach oben"

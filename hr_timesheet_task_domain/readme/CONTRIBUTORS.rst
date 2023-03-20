@@ -6,10 +6,7 @@
     * Sergio Teruel
     * Luis M. ontalba
     * Ernesto Tejeda
-    * Manuel Calero
 
 * `CorporateHub <https://corporatehub.eu/>`__
 
   * Alexey Pelykh <alexey.pelykh@corphub.eu>
-
-* Foram Shah <foram.shah@initos.com>

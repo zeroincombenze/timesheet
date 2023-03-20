@@ -7,17 +7,17 @@ from odoo import api, models
 class SaleOrderLine(models.Model):
     _inherit = "sale.order.line"
 
+    @api.multi
     def _get_delivered_quantity_by_analytic(self, additional_domain):
         # If we land here is only because we are dealing w/ SO lines
         # having `qty_delivered_method` equal to `analytic` or `timesheet`.
         # The 1st case matches expenses lines the latter TS lines.
         # Expenses are already discarded in our a.a.l. overrides
         # so it's fine to set the ctx key here anyway.
-        return super(
-            SaleOrderLine, self.with_context(timesheet_rounding=True)
-        )._get_delivered_quantity_by_analytic(additional_domain)
+        self = self.with_context(timesheet_rounding=True)
+        return super()._get_delivered_quantity_by_analytic(additional_domain)
 
-    @api.depends("analytic_line_ids.unit_amount_rounded")
+    @api.multi
+    @api.depends('analytic_line_ids.unit_amount_rounded')
     def _compute_qty_delivered(self):
-        """Adds the dependency on unit_amount_rounded."""
         super()._compute_qty_delivered()

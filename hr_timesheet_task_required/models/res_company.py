@@ -5,6 +5,8 @@ from odoo import fields, models
 
 
 class ResCompany(models.Model):
-    _inherit = "res.company"
+    _inherit = 'res.company'
 
-    is_timesheet_task_required = fields.Boolean(string="Require Tasks on Timesheets")
+    is_timesheet_task_required = fields.Boolean(
+        string='Require Tasks on Timesheets',
+    )

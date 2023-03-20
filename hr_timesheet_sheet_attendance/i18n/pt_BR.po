@@ -1,12 +1,12 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* hr_timesheet_sheet_attendance
+#	* hr_timesheet_sheet_attendance
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 14.0\n"
+"Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-03-14 12:22+0000\n"
+"PO-Revision-Date: 2023-03-14 14:22+0000\n"
 "Last-Translator: Douglas Custódio <douglascstd@yahoo.com>\n"
 "Language-Team: none\n"
 "Language: pt_BR\n"
@@ -36,12 +36,12 @@ msgstr "Presenças"
 #. module: hr_timesheet_sheet_attendance
 #: model_terms:ir.ui.view,arch_db:hr_timesheet_sheet_attendance.hr_timesheet_sheet_form
 msgid "Check In"
-msgstr "Check-in"
+msgstr "Entrada"
 
 #. module: hr_timesheet_sheet_attendance
 #: model_terms:ir.ui.view,arch_db:hr_timesheet_sheet_attendance.hr_timesheet_sheet_form
 msgid "Check Out"
-msgstr "Check-out"
+msgstr "Saída"
 
 #. module: hr_timesheet_sheet_attendance
 #: model:ir.model.fields,field_description:hr_timesheet_sheet_attendance.field_hr_timesheet_sheet__attendance_state
@@ -54,34 +54,14 @@ msgid "Difference"
 msgstr "Diferença"
 
 #. module: hr_timesheet_sheet_attendance
-#: model:ir.model.fields,field_description:hr_timesheet_sheet_attendance.field_hr_attendance__display_name
-#: model:ir.model.fields,field_description:hr_timesheet_sheet_attendance.field_hr_timesheet_sheet__display_name
-msgid "Display Name"
-msgstr "Nome exibido"
-
-#. module: hr_timesheet_sheet_attendance
-#: model:ir.model.fields,field_description:hr_timesheet_sheet_attendance.field_hr_attendance__id
-#: model:ir.model.fields,field_description:hr_timesheet_sheet_attendance.field_hr_timesheet_sheet__id
-msgid "ID"
-msgstr "ID"
-
-#. module: hr_timesheet_sheet_attendance
-#: model:ir.model.fields,field_description:hr_timesheet_sheet_attendance.field_hr_attendance____last_update
-#: model:ir.model.fields,field_description:hr_timesheet_sheet_attendance.field_hr_timesheet_sheet____last_update
-msgid "Last Modified on"
-msgstr "Ultima Modificação em"
-
-#. module: hr_timesheet_sheet_attendance
 #: model:ir.model.fields,field_description:hr_timesheet_sheet_attendance.field_hr_attendance__sheet_id
 msgid "Sheet"
 msgstr "Planilha"
 
 #. module: hr_timesheet_sheet_attendance
-#: code:addons/hr_timesheet_sheet_attendance/models/hr_timesheet_sheet.py:0
+#: code:addons/hr_timesheet_sheet_attendance/models/hr_timesheet_sheet.py:79
 #, python-format
-msgid ""
-"The timesheet cannot be validated as it does not contain an equal number of "
-"sign ins and sign outs."
+msgid "The timesheet cannot be validated as it does not contain an equal number of sign ins and sign outs."
 msgstr ""
 "A planilha de horas não pode ser validado como não contém um numero igual de "
 "entradas e saídas."
@@ -89,12 +69,12 @@ msgstr ""
 #. module: hr_timesheet_sheet_attendance
 #: model_terms:ir.ui.view,arch_db:hr_timesheet_sheet_attendance.hr_timesheet_sheet_form
 msgid "Timesheet"
-msgstr "Apontamento de hora"
+msgstr "Apontamento de horas"
 
 #. module: hr_timesheet_sheet_attendance
 #: model:ir.actions.act_window,name:hr_timesheet_sheet_attendance.hr_timesheet_sheet_action_sheet_activities
 msgid "Timesheet Activities"
-msgstr "Atividades do apontamento de hora"
+msgstr "Atividades de Apontamento de horas"
 
 #. module: hr_timesheet_sheet_attendance
 #: model:ir.model,name:hr_timesheet_sheet_attendance.model_hr_timesheet_sheet
@@ -104,29 +84,26 @@ msgstr "Planilha de horas"
 #. module: hr_timesheet_sheet_attendance
 #: model:ir.model.fields,field_description:hr_timesheet_sheet_attendance.field_hr_timesheet_sheet__total_attendance
 msgid "Total Attendance"
-msgstr "Total de Presença"
+msgstr "Presença total"
 
 #. module: hr_timesheet_sheet_attendance
-#: code:addons/hr_timesheet_sheet_attendance/models/hr_attendance.py:0
+#: code:addons/hr_timesheet_sheet_attendance/models/hr_attendance.py:100
 #, python-format
-msgid ""
-"You can not enter an attendance date outside the current timesheet dates."
+msgid "You can not enter an attendance date outside the current timesheet dates."
 msgstr ""
 "Você não pode inserir uma data de presença fora das atuais datas de "
 "apontamento de horas."
 
 #. module: hr_timesheet_sheet_attendance
-#: code:addons/hr_timesheet_sheet_attendance/models/hr_attendance.py:0
+#: code:addons/hr_timesheet_sheet_attendance/models/hr_attendance.py:83
 #, python-format
-msgid ""
-"You can not enter an attendance in a submitted timesheet. Ask your manager "
-"to reset it before adding attendance."
+msgid "You can not enter an attendance in a submitted timesheet. Ask your manager to reset it before adding attendance."
 msgstr ""
 "Você não pode inserir uma presença em um apontamento de horas enviado. "
 "Solicite ao seu gerente para reinicia-lo antes de adicionar presenças."
 
 #. module: hr_timesheet_sheet_attendance
-#: code:addons/hr_timesheet_sheet_attendance/models/hr_attendance.py:0
+#: code:addons/hr_timesheet_sheet_attendance/models/hr_attendance.py:62
 #, python-format
 msgid "You cannot modify an entry in a confirmed timesheet"
 msgstr ""

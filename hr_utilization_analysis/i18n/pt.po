@@ -17,7 +17,7 @@ msgstr ""
 "X-Generator: Weblate 3.10\n"
 
 #. module: hr_utilization_analysis
-#: model:ir.model.constraint,message:hr_utilization_analysis.constraint_hr_utilization_analysis_entry_entry_uniq
+#: sql_constraint:hr.utilization.analysis.entry:0
 msgid "An analysis entry for employee/date pair has to be unique!"
 msgstr "Uma entrada de análise para um par funcionário/data tem que ser única!"
 
@@ -67,7 +67,7 @@ msgid "Date range"
 msgstr ""
 
 #. module: hr_utilization_analysis
-#: code:addons/hr_utilization_analysis/report/hr_utilization_analysis.py:0
+#: code:addons/hr_utilization_analysis/report/hr_utilization_analysis.py:52
 #, python-format
 msgid "Date-To can not be earlier than Date-From"
 msgstr "Data-Final não pode ser anterior à Data-Inicial"
@@ -101,12 +101,6 @@ msgstr "Nome a Exibir"
 #: model_terms:ir.ui.view,arch_db:hr_utilization_analysis.hr_utilization_analysis_entry_search
 msgid "Employee"
 msgstr "Funcionário"
-
-#. module: hr_utilization_analysis
-#: model:ir.model.fields,field_description:hr_utilization_analysis.field_hr_utilization_analysis_entry__name
-#, fuzzy
-msgid "Employee Name"
-msgstr "Etiquetas de Funcionários"
 
 #. module: hr_utilization_analysis
 #: model:ir.model.fields,field_description:hr_utilization_analysis.field_hr_utilization_analysis__employee_category_ids
@@ -186,6 +180,11 @@ msgid "Manager"
 msgstr "Gestor"
 
 #. module: hr_utilization_analysis
+#: model:ir.model.fields,field_description:hr_utilization_analysis.field_hr_utilization_analysis_entry__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: hr_utilization_analysis
 #: model:ir.model.fields,field_description:hr_utilization_analysis.field_hr_utilization_analysis__only_active_employees
 #: model:ir.model.fields,field_description:hr_utilization_analysis.field_hr_utilization_analysis_wizard__only_active_employees
 msgid "Only Active Employees"
@@ -231,7 +230,7 @@ msgid "Utilization"
 msgstr "Utilização"
 
 #. module: hr_utilization_analysis
-#: code:addons/hr_utilization_analysis/wizards/hr_utilization_analysis_wizard.py:0
+#: code:addons/hr_utilization_analysis/wizards/hr_utilization_analysis_wizard.py:65
 #, python-format
 msgid "Utilization Analysis"
 msgstr "Análise de Utilização"
@@ -252,6 +251,3 @@ msgstr "Ver"
 #: model:ir.actions.server,name:hr_utilization_analysis.action_utilization_analysis_wizard_from_employees
 msgid "View Utilization Analysis"
 msgstr "Ver Análise de Utilização"
-
-#~ msgid "Name"
-#~ msgstr "Nome"

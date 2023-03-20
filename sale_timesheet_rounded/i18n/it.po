@@ -1,13 +1,13 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* sale_timesheet_rounded
+#	* sale_timesheet_rounded
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 14.0\n"
+"Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-01-12 22:44+0000\n"
-"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"PO-Revision-Date: 2023-02-01 16:48+0000\n"
+"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -18,8 +18,7 @@ msgstr ""
 
 #. module: sale_timesheet_rounded
 #: model:ir.model.fields,help:sale_timesheet_rounded.field_project_project__timesheet_rounding_unit
-msgid ""
-"1.0 = hour\n"
+msgid "1.0 = hour\n"
 "            0.25 = 15 min\n"
 "            0.084 ~= 5 min\n"
 "            0.017 ~= 1 min\n"
@@ -33,12 +32,11 @@ msgstr ""
 
 #. module: sale_timesheet_rounded
 #: model_terms:ir.ui.view,arch_db:sale_timesheet_rounded.account_analytic_line_kanban_inherit
-msgid ""
-"<br/>\n"
-"                <strong>Rounded: </strong>"
+msgid "<br/>\n"
+"        <strong>Rounded: </strong>"
 msgstr ""
 "<br/>\n"
-"                <strong>Arrotondato: </strong>"
+"        <strong>Arrotondato: </strong>"
 
 #. module: sale_timesheet_rounded
 #: model:ir.model,name:sale_timesheet_rounded.model_account_analytic_line
@@ -46,19 +44,12 @@ msgid "Analytic Line"
 msgstr "Riga analitica"
 
 #. module: sale_timesheet_rounded
-#: model:ir.model.fields.selection,name:sale_timesheet_rounded.selection__project_project__timesheet_rounding_method__half_up
+#: selection:project.project,timesheet_rounding_method:0
 msgid "Closest"
 msgstr "Il più vicino"
 
 #. module: sale_timesheet_rounded
-#: model:ir.model.fields,field_description:sale_timesheet_rounded.field_account_analytic_line__display_name
-#: model:ir.model.fields,field_description:sale_timesheet_rounded.field_project_project__display_name
-#: model:ir.model.fields,field_description:sale_timesheet_rounded.field_sale_order_line__display_name
-msgid "Display Name"
-msgstr "Nome visualizzato"
-
-#. module: sale_timesheet_rounded
-#: model:ir.model.fields.selection,name:sale_timesheet_rounded.selection__project_project__timesheet_rounding_method__down
+#: selection:project.project,timesheet_rounding_method:0
 msgid "Down"
 msgstr "Giù"
 
@@ -68,31 +59,15 @@ msgid "Duration (rounded)"
 msgstr "Durata (arrotondata)"
 
 #. module: sale_timesheet_rounded
-#: model:ir.model.fields,field_description:sale_timesheet_rounded.field_account_analytic_line__id
-#: model:ir.model.fields,field_description:sale_timesheet_rounded.field_project_project__id
-#: model:ir.model.fields,field_description:sale_timesheet_rounded.field_sale_order_line__id
-msgid "ID"
-msgstr "ID"
-
-#. module: sale_timesheet_rounded
 #: model:ir.model.fields,help:sale_timesheet_rounded.field_project_project__timesheet_rounding_method
-msgid ""
-"If you activate the rounding of timesheet lines, only new entries will be "
-"rounded (i.e. existing lines will not be rounded automatically)."
+msgid "If you activate the rounding of timesheet lines, only new entries will be rounded (i.e. existing lines will not be rounded automatically)."
 msgstr ""
 "Se si attiva l'arrotondamento delle righe del foglio ore, solo le nuove "
-"righe verranno arrotondate (i.e. le righe esistenti non verranno arrotondate "
-"automaticamente)."
+"registrazioni verranno arrotondate (i.e. le righe inserite non verranno "
+"arrotondate automaticamente)."
 
 #. module: sale_timesheet_rounded
-#: model:ir.model.fields,field_description:sale_timesheet_rounded.field_account_analytic_line____last_update
-#: model:ir.model.fields,field_description:sale_timesheet_rounded.field_project_project____last_update
-#: model:ir.model.fields,field_description:sale_timesheet_rounded.field_sale_order_line____last_update
-msgid "Last Modified on"
-msgstr "Ultima modifica il"
-
-#. module: sale_timesheet_rounded
-#: model:ir.model.fields.selection,name:sale_timesheet_rounded.selection__project_project__timesheet_rounding_method__no
+#: selection:project.project,timesheet_rounding_method:0
 msgid "No rounding"
 msgstr "Non arrotondare"
 
@@ -116,7 +91,7 @@ msgstr "Quantità arrotondata"
 #. module: sale_timesheet_rounded
 #: model:ir.model,name:sale_timesheet_rounded.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "Riga ordine vendita"
+msgstr "Riga ordine di vendita"
 
 #. module: sale_timesheet_rounded
 #: model_terms:ir.ui.view,arch_db:sale_timesheet_rounded.project_project_form_inherit
@@ -129,16 +104,16 @@ msgid "Timesheet rounding factor in percentage"
 msgstr "Fattore arrotondamento foglio ore in percentuale"
 
 #. module: sale_timesheet_rounded
-#: model:ir.model.constraint,message:sale_timesheet_rounded.constraint_project_project_check_timesheet_rounding_factor
-msgid ""
-"Timesheet rounding factor should stay between 0 and 500, endpoints included."
+#: sql_constraint:project.project:0
+msgid "Timesheet rounding factor should stay between 0 and 500, endpoints included."
 msgstr ""
-"Il fattore arrotondamento foglio ore deve stare tra 0 e 500, estremi inclusi."
+"Il fattore di arrotondamento del foglio ore deve essere tra 0 e 500, estremi "
+"inclusi."
 
 #. module: sale_timesheet_rounded
 #: model:ir.model.fields,field_description:sale_timesheet_rounded.field_project_project__timesheet_rounding_method
 msgid "Timesheet rounding method"
-msgstr "Metodo arrotondamento foglio ore"
+msgstr "Metodo arrotondamento fogli ore"
 
 #. module: sale_timesheet_rounded
 #: model:ir.model.fields,field_description:sale_timesheet_rounded.field_project_project__timesheet_rounding_unit
@@ -148,9 +123,9 @@ msgstr "Unità arrotondamento foglio ore"
 #. module: sale_timesheet_rounded
 #: model_terms:ir.ui.view,arch_db:sale_timesheet_rounded.account_analytic_line_tree_inherit
 msgid "Total quantity rounded"
-msgstr "Quantità totale arrotondata"
+msgstr "Totale quantità arrotondata"
 
 #. module: sale_timesheet_rounded
-#: model:ir.model.fields.selection,name:sale_timesheet_rounded.selection__project_project__timesheet_rounding_method__up
+#: selection:project.project,timesheet_rounding_method:0
 msgid "Up"
 msgstr "Su"

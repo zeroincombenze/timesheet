@@ -3,14 +3,14 @@
 
 from odoo import fields, models
 
-SHEET_RANGE_PAYROLL_PERIOD = "100"
+SHEET_RANGE_PAYROLL_PERIOD = 100
 
 
 class ResCompany(models.Model):
-    _inherit = "res.company"
+    _inherit = 'res.company'
 
     sheet_range = fields.Selection(
         selection_add=[
-            (SHEET_RANGE_PAYROLL_PERIOD, "Payroll Period"),
+            (SHEET_RANGE_PAYROLL_PERIOD, 'Payroll Period'),
         ],
     )
