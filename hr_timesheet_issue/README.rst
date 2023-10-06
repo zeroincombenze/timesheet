@@ -47,6 +47,86 @@ Overview / Panoramica
 Overview / Panoramica
 =====================
 
+|en| ==========================================
+|icon| HR - Issue In Timesheets 10.0.1.0.0
+==========================================
+
+**Allow the user to select issue in a timesheet**
+
+.. |icon| image:: https://raw.githubusercontent.com/zeroincombenze/timesheet/10.0/hr_timesheet_issue/static/description/icon.png
+
+
+.. contents::
+
+
+
+Overview / Panoramica
+=====================
+
+|en| ==========================================
+|icon| HR - Issue In Timesheets 10.0.1.0.0
+==========================================
+
+**Allow the user to select issue in a timesheet**
+
+.. |icon| image:: https://raw.githubusercontent.com/zeroincombenze/timesheet/10.0/hr_timesheet_issue/static/description/icon.png
+
+
+.. contents::
+
+
+
+Overview / Panoramica
+=====================
+
+|en| ==========================================
+|icon| HR - Issue In Timesheets 10.0.1.0.0
+==========================================
+
+**Allow the user to select issue in a timesheet**
+
+.. |icon| image:: https://raw.githubusercontent.com/zeroincombenze/timesheet/10.0/hr_timesheet_issue/static/description/icon.png
+
+
+.. contents::
+
+
+
+Overview / Panoramica
+=====================
+
+|en| ==========================================
+|icon| HR - Issue In Timesheets 10.0.1.0.0
+==========================================
+
+**Allow the user to select issue in a timesheet**
+
+.. |icon| image:: https://raw.githubusercontent.com/zeroincombenze/timesheet/10.0/hr_timesheet_issue/static/description/icon.png
+
+
+.. contents::
+
+
+
+Overview / Panoramica
+=====================
+
+|en| ==========================================
+|icon| HR - Issue In Timesheets 10.0.1.0.0
+==========================================
+
+**Allow the user to select issue in a timesheet**
+
+.. |icon| image:: https://raw.githubusercontent.com/zeroincombenze/timesheet/10.0/hr_timesheet_issue/static/description/icon.png
+
+
+.. contents::
+
+
+
+Overview / Panoramica
+=====================
+
 |en| .. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
@@ -56,6 +136,41 @@ Timesheet Task
 ==============
 
 This module adds the task field on the weekly timesheet widget.
+
+
+|
+
+|it| N/D
+
+|
+
+
+|
+
+|it| N/D
+
+|
+
+
+|
+
+|it| N/D
+
+|
+
+
+|
+
+|it| N/D
+
+|
+
+
+|
+
+|it| N/D
+
+|
 
 
 |
@@ -199,7 +314,7 @@ An Enhancement Proposal may be submitted if your idea gains ground.
 ChangeLog History / Cronologia modifiche
 ----------------------------------------
 
-10.0.0.1.0 (2016-10-06)
+10.0.0.1.0 (2023-10-05)
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 * Initial implementation
@@ -248,7 +363,7 @@ La distribuzione `Zeroincombenze® <https://www.zeroincombenze.it/>`__ è proget
 
 This module is part of timesheet project.
 
-Last Update / Ultimo aggiornamento: 2023-10-05
+Last Update / Ultimo aggiornamento: 2023-10-06
 
 .. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-black.png
     :target: https://odoo-community.org/page/development-status
