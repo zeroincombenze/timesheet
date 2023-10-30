@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
-# Copyright 2017 Scopea, Niboo SPRL, Camptocamp SA
-# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+from . import models
+from .post_install import set_other_partner_post, set_other_partner

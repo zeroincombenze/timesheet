@@ -1,4 +1,4 @@
-Segnalazioni su foglio ore
---------------------------
+Allow the user to select issue in a timesheet.
 
-Abilita l'utente a gestire le segnalazioni sui fogli ore
+When user change partner id on task, the field is propagated on all timesheets of the
+task.

@@ -10,6 +10,7 @@
     "development_status": "Alpha",
     "license": "AGPL-3",
     "depends": [
+        "analytic_partner",
         "project_issue_sheet",
         "hr_timesheet_task",
         "hr_timesheet",
@@ -21,4 +22,5 @@
     "maintainer": "Antonio M. Vigliotti <antoniomaria.vigliotti@gmail.com>",
     "installable": True,
     "application": False,
+    "post_init_hook": "set_other_partner_post",
 }

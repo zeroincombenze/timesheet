@@ -1,7 +1,7 @@
 
-==========================================
-|icon| HR - Issue In Timesheets 10.0.1.0.0
-==========================================
+=====================================================================
+|icon| HR - Issue on Timesheets/Problematiche su fogli ore 10.0.1.0.0
+=====================================================================
 
 **Allow the user to select issue in a timesheet**
 
@@ -12,196 +12,30 @@
 
 
 
-Overview / Panoramica
+Overview | Panoramica
 =====================
 
-|en| ==========================================
-|icon| HR - Issue In Timesheets 10.0.1.0.0
-==========================================
+|en| Allow the user to select issue in a timesheet.
 
-**Allow the user to select issue in a timesheet**
-
-.. |icon| image:: https://raw.githubusercontent.com/zeroincombenze/timesheet/10.0/hr_timesheet_issue/static/description/icon.png
-
-
-.. contents::
-
-
-
-Overview / Panoramica
-=====================
-
-|en| ==========================================
-|icon| HR - Issue In Timesheets 10.0.1.0.0
-==========================================
-
-**Allow the user to select issue in a timesheet**
-
-.. |icon| image:: https://raw.githubusercontent.com/zeroincombenze/timesheet/10.0/hr_timesheet_issue/static/description/icon.png
-
-
-.. contents::
-
-
-
-Overview / Panoramica
-=====================
-
-|en| ==========================================
-|icon| HR - Issue In Timesheets 10.0.1.0.0
-==========================================
-
-**Allow the user to select issue in a timesheet**
-
-.. |icon| image:: https://raw.githubusercontent.com/zeroincombenze/timesheet/10.0/hr_timesheet_issue/static/description/icon.png
-
-
-.. contents::
-
-
-
-Overview / Panoramica
-=====================
-
-|en| ==========================================
-|icon| HR - Issue In Timesheets 10.0.1.0.0
-==========================================
-
-**Allow the user to select issue in a timesheet**
-
-.. |icon| image:: https://raw.githubusercontent.com/zeroincombenze/timesheet/10.0/hr_timesheet_issue/static/description/icon.png
-
-
-.. contents::
-
-
-
-Overview / Panoramica
-=====================
-
-|en| ==========================================
-|icon| HR - Issue In Timesheets 10.0.1.0.0
-==========================================
-
-**Allow the user to select issue in a timesheet**
-
-.. |icon| image:: https://raw.githubusercontent.com/zeroincombenze/timesheet/10.0/hr_timesheet_issue/static/description/icon.png
-
-
-.. contents::
-
-
-
-Overview / Panoramica
-=====================
-
-|en| ==========================================
-|icon| HR - Issue In Timesheets 10.0.1.0.0
-==========================================
-
-**Allow the user to select issue in a timesheet**
-
-.. |icon| image:: https://raw.githubusercontent.com/zeroincombenze/timesheet/10.0/hr_timesheet_issue/static/description/icon.png
-
-
-.. contents::
-
-
-
-Overview / Panoramica
-=====================
-
-|en| ==========================================
-|icon| HR - Issue In Timesheets 10.0.1.0.0
-==========================================
-
-**Allow the user to select issue in a timesheet**
-
-.. |icon| image:: https://raw.githubusercontent.com/zeroincombenze/timesheet/10.0/hr_timesheet_issue/static/description/icon.png
-
-
-.. contents::
-
-
-
-Overview / Panoramica
-=====================
-
-|en| .. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
-   :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
-   :alt: License: AGPL-3
-
-==============
-Timesheet Task
-==============
-
-This module adds the task field on the weekly timesheet widget.
-
+When user change partner id on task, the field is propagated on all timesheets of the
+task.
 
 |
 
-|it| N/D
+|it| Permette di impostare il riferimento ad un problematica su un foglio ore.
 
-|
-
-
-|
-
-|it| N/D
-
-|
+Quando l'utente cambia il cliente nel lavoro del progetto, il cliente vien propagatoa in
+tutte le righe dei fogli ore del lavoro.
 
 
-|
 
-|it| N/D
-
-|
-
-
-|
-
-|it| N/D
-
-|
-
-
-|
-
-|it| N/D
-
-|
-
-
-|
-
-|it| N/D
-
-|
-
-
-|
-
-|it| N/D
-
-|
-
-
-|
-
-|it| N/D
-
-|
-
-Getting started / Primi passi
+Getting started | Primi passi
 =============================
 
 |Try Me|
 
 
-|
-
-Installation / Installazione
+Installation | Installazione
 ----------------------------
 
 
@@ -214,11 +48,11 @@ Installation / Installazione
 |                                 |                                          |
 | Installation is built with:     | L'installazione è costruita con:         |
 +---------------------------------+------------------------------------------+
-| `Zeroincombenze Tools <https://zeroincombenze-tools.readthedocs.io/>`__    |
+| `Zeroincombenze Tools <https://zeroincombenze-tools.readthedocs.io/>`__ |
 +---------------------------------+------------------------------------------+
 | Suggested deployment is:        | Posizione suggerita per l'installazione: |
 +---------------------------------+------------------------------------------+
-| $HOME/10.0                                                                 |
+| $HOME/10.0 |
 +----------------------------------------------------------------------------+
 
 ::
@@ -247,9 +81,15 @@ From UI: go to:
 * |menu| Setting > Apps |right_do| Select **hr_timesheet_issue** > Install
 
 
-|
 
-Upgrade / Aggiornamento
+Configuration | Configurazione
+------------------------------
+
+You have to be granted as at least "Adviser" in your user profile and
+have checked the "Analytic Accounting" access right.
+
+
+Upgrade | Aggiornamento
 -----------------------
 
 
@@ -280,19 +120,16 @@ From UI: go to:
 * |menu| Setting > Apps |right_do| Select **hr_timesheet_issue** > Update
 
 
-|
 
-Support / Supporto
+Support | Supporto
 ------------------
 
 
 |Zeroincombenze| This module is supported by the `SHS-AV s.r.l. <https://www.zeroincombenze.it/>`__
 
 
-|
-|
 
-Get involved / Ci mettiamo in gioco
+Get involved | Ci mettiamo in gioco
 ===================================
 
 Bug reports are welcome! You can use the issue tracker to report bugs,
@@ -300,6 +137,19 @@ and/or submit pull requests on `GitHub Issues
 <https://github.com/zeroincombenze/timesheet/issues>`_.
 
 In case of trouble, please check there if your issue has already been reported.
+
+
+Known issues | Roadmap
+----------------------
+
+For historical reasons, `partner_id` in analytic line cannot be assigned to the customer
+of the project or the customer of the task. This module use *analytic_partner* module
+that use `other_partner_id` field for this purpose.
+
+This module hasn't been tested with *account_analytic_distribution* module
+installed, so maybe it's incompatible with it.
+
+
 
 Proposals for enhancement
 -------------------------
@@ -311,7 +161,8 @@ An Enhancement Proposal may be submitted if your idea gains ground.
 |it| Se hai proposte per migliorare questo modulo, puoi inviare una mail a <cc@shs-av.com> per un iniziale contatto.
 
 
-ChangeLog History / Cronologia modifiche
+
+ChangeLog History | Cronologia modifiche
 ----------------------------------------
 
 10.0.0.1.0 (2023-10-05)
@@ -320,10 +171,8 @@ ChangeLog History / Cronologia modifiche
 * Initial implementation
 
 
-|
-|
 
-Credits / Didascalie
+Credits | Didascalie
 ====================
 
 Copyright
@@ -332,19 +181,23 @@ Copyright
 Odoo is a trademark of `Odoo S.A. <https://www.odoo.com/>`__ (formerly OpenERP)
 
 
-|
-
-Authors / Autori
+Authors | Autori
 ----------------
 
 * SHS-AV s.r.l. <https://www.zeroincombenze.it>
 
-Maintainer / Manutenzione
+
+Contributors | Contributi da
+----------------------------
+
+Antonio M. Vigliotti <antoniomaria.vigliotti@gmail.com>
+
+
+Maintainer | Manutenzione
 -------------------------
 
 Antonio M. Vigliotti <antoniomaria.vigliotti@gmail.com>
 
-|
 
 ----------------
 
@@ -359,11 +212,13 @@ che distribuisce e promuove **Odoo** pronto all'uso sulla propria infrastuttura.
 La distribuzione `Zeroincombenze® <https://www.zeroincombenze.it/>`__ è progettata per le esigenze del mercato italiano.
 
 
+
+|
 |
 
 This module is part of timesheet project.
 
-Last Update / Ultimo aggiornamento: 2023-10-06
+Last Update / Ultimo aggiornamento: 2023-10-30
 
 .. |Maturity| image:: https://img.shields.io/badge/maturity-Alfa-black.png
     :target: https://odoo-community.org/page/development-status

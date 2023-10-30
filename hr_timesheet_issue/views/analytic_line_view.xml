@@ -19,7 +19,6 @@
         <field name="arch" type="xml">
             <xpath expr="//field[@name='task_id']" position="after">
                 <field name="issue_id" attrs="{'invisible': [('task_id', '!=', False)]}"/>
-                <field name="partner_id"/>
             </xpath>
         </field>
     </record>
